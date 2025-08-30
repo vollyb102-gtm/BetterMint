@@ -16,6 +16,8 @@
     "host_permissions": [
         "http://*.chess.com/*",
         "https://*.chess.com/*"
+        "http://*.lichess.org/*",
+        "https://*.lichess.org/*"
     ],
     "content_scripts": [
         {
@@ -29,6 +31,7 @@
             ],
             "matches": [
                 "https://*.chess.com/*"
+                "http://*.lichess.org/*"
             ],
             "run_at": "document_start"
         }
